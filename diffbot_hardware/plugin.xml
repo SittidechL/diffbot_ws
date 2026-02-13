@@ -1,0 +1,10 @@
+<library path="diffbot_hardware">
+  <class
+    name="diffbot_hardware/TeensyDiffDrive"
+    type="diffbot_hardware::TeensyDiffDrive"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Diffbot Teensy Diff Drive Hardware Interface
+    </description>
+  </class>
+</library>

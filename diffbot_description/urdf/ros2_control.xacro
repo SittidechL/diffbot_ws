@@ -1,0 +1,15 @@
+<ros2_control name="DiffbotSystem" type="system">
+  <hardware>
+    <plugin>diffbot_hardware/TeensyDiffDrive</plugin>
+  </hardware>
+
+  <joint name="left_wheel_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <joint name="right_wheel_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+  </joint>
+</ros2_control>
