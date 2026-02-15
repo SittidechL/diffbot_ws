@@ -37,10 +37,15 @@ def generate_launch_description():
                 "controller.yaml"
             ])
         ],
+        remappings=[
+            ("/diff_drive_controller/odom", "/odom"),
+            ("/diff_drive_controller/cmd_vel_unstamped", "/cmd_vel"),
+        ],
         output="screen",
     )
 
-    # ✅ joint_state_broadcaster
+
+      # ✅ joint_state_broadcaster
     joint_state_broadcaster = Node(
         package="controller_manager",
         executable="spawner",
